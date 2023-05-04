@@ -1,0 +1,364 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/KappuChinooo/Documents/ece2000/2220/Questa/intro
+T_opt
+!s110 1683204987
+VLb94]N8a4U_N^G@DAflLS0
+Z2 04 11 8 work testreg_vhd behavior 1
+=1-7cd30a81577c-6453ab7a-36c-4230
+Z3 !s124 OEM10U72 
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1683206317
+VWYIGo50[^ec5GOg5SLic42
+R2
+=1-7cd30a81577c-6453b0ac-364-9868
+R3
+R4
+R5
+n@_opt1
+R6
+Eadder_subtracter
+Z7 w1683197066
+Z8 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z9 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z10 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 107
+Z13 dC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project
+Z14 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/adder_subtracter.vhd
+Z15 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/adder_subtracter.vhd
+l0
+L6 1
+VYl[zWXX^;eACP0jh>E7Zl1
+!s100 `D]8NR=CWfEi`SPJVNnm<2
+Z16 OL;C;2021.2;73
+32
+Z17 !s110 1683206298
+!i10b 1
+Z18 !s108 1683206297.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/adder_subtracter.vhd|
+Z20 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/adder_subtracter.vhd|
+!i113 0
+Z21 o-work work -2002 -explicit
+Z22 tExplicit 1 CvgOpt 0
+Acalc
+R8
+R9
+R10
+R11
+R12
+DEx4 work 16 adder_subtracter 0 22 Yl[zWXX^;eACP0jh>E7Zl1
+!i122 107
+l23
+L14 20
+VgTQM7oOaX2NbhIo]PNke52
+!s100 _;Pk:OKo0;`lmWN63QUlX2
+R16
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R21
+R22
+Ebitstorage
+Z23 w1683186178
+R8
+R9
+R10
+R11
+R12
+!i122 103
+R13
+Z24 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/bitstorage.vhd
+Z25 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/bitstorage.vhd
+l0
+L6 1
+VeSE?czZZ2W`HQAEPk:[ZL3
+!s100 7DkTE8j^^b>d;g?B5KcEW3
+R16
+32
+Z26 !s110 1683206297
+!i10b 1
+R18
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/bitstorage.vhd|
+Z28 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/bitstorage.vhd|
+!i113 0
+R21
+R22
+Amemlike
+R8
+R9
+R10
+R11
+R12
+DEx4 work 10 bitstorage 0 22 eSE?czZZ2W`HQAEPk:[ZL3
+!i122 103
+l15
+L13 13
+V2Ec]NUJ>WAIkAZGMRhRjX3
+!s100 ko9m<@9jfD?H<BYBGKS<H0
+R16
+32
+R26
+!i10b 1
+R18
+R27
+R28
+!i113 0
+R21
+R22
+Efulladder
+Z29 w1683186211
+R8
+R9
+R10
+R11
+R12
+!i122 104
+R13
+Z30 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/fulladder.vhd
+Z31 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/fulladder.vhd
+l0
+L6 1
+Vei0?QaO3;PaoQRGL2LBQN2
+!s100 LgOhi2n6F_bQAgdGSC@e`3
+R16
+32
+R26
+!i10b 1
+R18
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/fulladder.vhd|
+Z33 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/fulladder.vhd|
+!i113 0
+R21
+R22
+Aaddlike
+R8
+R9
+R10
+R11
+R12
+DEx4 work 9 fulladder 0 22 ei0?QaO3;PaoQRGL2LBQN2
+!i122 104
+l16
+L15 5
+VfEb9YdzCDi7TnSOX:ZkBf0
+!s100 dW>36=VjfTLRUNEDZ289i0
+R16
+32
+R26
+!i10b 1
+R18
+R32
+R33
+!i113 0
+R21
+R22
+Eregister32
+Z34 w1683205210
+R8
+R9
+R10
+R11
+R12
+!i122 106
+R13
+Z35 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register32.vhd
+Z36 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register32.vhd
+l0
+L6 1
+ViEkD<B^A0[V:nXQZ:F1NA0
+!s100 >o<VIEPm4m5G=YWzdWMaB2
+R16
+32
+R26
+!i10b 1
+R18
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register32.vhd|
+Z38 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register32.vhd|
+!i113 0
+R21
+R22
+Abiggermem
+R8
+R9
+R10
+R11
+R12
+DEx4 work 10 register32 0 22 iEkD<B^A0[V:nXQZ:F1NA0
+!i122 106
+l21
+L13 20
+Vlf>]IlS9cjR8WC>?eI7nz1
+!s100 U;=I;Yi9[LD>z`UB<ga>^1
+R16
+32
+R26
+!i10b 1
+R18
+R37
+R38
+!i113 0
+R21
+R22
+Eregister8
+Z39 w1683197074
+R8
+R9
+R10
+R11
+R12
+!i122 105
+R13
+Z40 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register8.vhd
+Z41 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register8.vhd
+l0
+L6 1
+V:c3OD12bh>29]A4AEcOM>0
+!s100 XjAHU0YGd::WcM<407nf81
+R16
+32
+R26
+!i10b 1
+R18
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register8.vhd|
+Z43 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/register8.vhd|
+!i113 0
+R21
+R22
+Amemmy
+R8
+R9
+R10
+R11
+R12
+DEx4 work 9 register8 0 22 :c3OD12bh>29]A4AEcOM>0
+!i122 105
+l20
+L13 12
+VN2H4=5]PT@HLNciFjISlW0
+!s100 ^0ONAB@625U?Y^TZ4ab<<2
+R16
+32
+R26
+!i10b 1
+R18
+R42
+R43
+!i113 0
+R21
+R22
+Eshift_register
+Z44 w1683204162
+R8
+R9
+R10
+R11
+R12
+!i122 108
+R13
+Z45 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/shift_register.vhd
+Z46 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/shift_register.vhd
+l0
+L6 1
+V6V9z^SZo8SkW>h;k1>FH^0
+!s100 zbRTR0V1M79gm?ljDb>TF0
+R16
+32
+R17
+!i10b 1
+Z47 !s108 1683206298.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/shift_register.vhd|
+Z49 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/Questa Project/shift_register.vhd|
+!i113 0
+R21
+R22
+Ashifter
+R8
+R9
+R10
+R11
+R12
+DEx4 work 14 shift_register 0 22 6V9z^SZo8SkW>h;k1>FH^0
+!i122 108
+l18
+L13 26
+VGFFma6V1TbE:Ba=I<2R6@2
+!s100 l1a5bagQWE31_V;8Vdfb41
+R16
+32
+R17
+!i10b 1
+R47
+R48
+R49
+!i113 0
+R21
+R22
+Etestreg_vhd
+Z50 w1683176076
+R10
+R8
+R9
+R11
+R12
+!i122 109
+R13
+Z51 8C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/tregisterswclues.vhd
+Z52 FC:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/tregisterswclues.vhd
+l0
+L12 1
+ViXoQXl2a;kM[chQ:j@fB?1
+!s100 [FQ?dzLOmOKmXoOC5VXHN0
+R16
+32
+R17
+!i10b 1
+R47
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/tregisterswclues.vhd|
+Z54 !s107 C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_3/tregisterswclues.vhd|
+!i113 0
+R21
+R22
+Abehavior
+R10
+R8
+R9
+R11
+R12
+DEx4 work 11 testreg_vhd 0 22 iXoQXl2a;kM[chQ:j@fB?1
+!i122 109
+l59
+L15 151
+VkbOe39?Vb]5;FNY]5>AO41
+!s100 zdoKYizBG:HDl<[>DIJn_0
+R16
+32
+R17
+!i10b 1
+R47
+R53
+R54
+!i113 0
+R21
+R22
