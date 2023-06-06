@@ -168,9 +168,9 @@ architecture shifter of shift_register is
 	signal l2,r2: std_logic_vector(33 downto 0);
 	signal l3,r3: std_logic_vector(34 downto 0);
 begin
-	shift <= "01" when shamt(1 downto 0)="01" else
-	"10" when shamt(1 downto 0)="10" else
-	"11" when shamt(1 downto 0)="11" else
+	shift <= "01" when shamt="00001" else
+	"10" when shamt="00010" else
+	"11" when shamt="00011" else
 	"00";
 	l1 <= datain & "0";
 	l2 <= datain & "00";
