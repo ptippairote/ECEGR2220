@@ -9,6 +9,16 @@ Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling entity ALU
 -- Compiling architecture ALU_Arch of ALU
 
+} {} {}} C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/Processor.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/Processor.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Processor
+-- Compiling architecture holistic of Processor
+
 } {} {}} C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/tProcessor.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/tProcessor.vhd
 Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 -- Loading package STANDARD
@@ -41,23 +51,6 @@ Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling entity shift_register
 -- Compiling architecture shifter of shift_register
 ** Warning: C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/registers.vhd(181): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
-
-} {} {}} C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/ProcElements.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/ProcElements.vhd
-Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity BusMux2to1
--- Compiling architecture selection of BusMux2to1
--- Compiling entity Control
--- Compiling architecture Boss of Control
--- Compiling entity ProgramCounter
--- Compiling architecture executive of ProgramCounter
--- Loading package NUMERIC_STD
--- Compiling entity ImmGen
--- Compiling architecture gen of ImmGen
 
 } {} {}} C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/InstrMemory.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/KappuChinooo/Documents/ece2000/2220/ECEGR2220/Lab_6/InstrMemory.vhd
 Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021

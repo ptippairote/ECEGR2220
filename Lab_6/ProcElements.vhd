@@ -64,7 +64,7 @@ ALUCtrl <= "00000" when addCon='1' else
 RegWrite<='0' when (opcode="1100011" or opcode = "0100011" or clk='1') else '1'; --clk = 1 so it goes high during falling edge and latches then
 MemWrite<='1' when opcode="0100011" else '0';
 MemtoReg<='1' when opcode="0000011" else '0';
-ALUSrc<='0' when rForm='1' else '1';
+ALUSrc<='0' when (rForm='1' or opcode="1100011") else '1';
 Branch<="01" when (opcode="1100011" and funct3="000") else "10" when (opcode="1100011" and funct3="001") else "00";
 ImmGen<="01" when opcode="0100011" else "10" when opcode="1100011" else "11" when opcode="0110111" else "00";
 MemRead<='0' when opcode="0000011" else '1';
