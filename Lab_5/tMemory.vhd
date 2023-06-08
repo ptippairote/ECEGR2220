@@ -266,6 +266,122 @@ BEGIN
 		readReg2 <= "00000";
 		wait for 10 ns;	
 
+		dataIn   <= X"12345678"; --write to zero
+		writeReg <= "00000";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"23456789";
+		writeReg <= "01011";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"01234567";
+		writeReg <= "01010";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		readReg1 <= "00000"; --zero should still be 0x0000000
+		readReg2 <= "01010";
+		wait for 10 ns;	
+
+		readReg1 <= "01011";
+		readReg2 <= "01011";
+		wait for 10 ns;	
+
+		dataIn   <= X"11112211";
+		writeReg <= "01010";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"22122111";
+		writeReg <= "01011";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"32109876";
+		writeReg <= "01100";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"45444444";
+		writeReg <= "01101";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"55556666";
+		writeReg <= "01110";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+		
+		dataIn   <= X"61111111";
+		writeReg <= "01111";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;
+
+		dataIn   <= X"78654231";
+		writeReg <= "10000";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		dataIn   <= X"87654321";
+		writeReg <= "10001";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+
+		readReg1 <= "00000"; --read back again
+		readReg2 <= "01010";
+		wait for 10 ns;	
+
+		readReg1 <= "01011";
+		readReg2 <= "01100";
+		wait for 10 ns;	
+
+		readReg1 <= "01101";
+		readReg2 <= "01110";
+		wait for 10 ns;	
+
+		readReg1 <= "01111";
+		readReg2 <= "10000";
+		wait for 10 ns;	
+
+		readReg1 <= "10001";
+		readReg2 <= "00000";
+		wait for 10 ns;	
+
+		readReg1 <= "01111";
+		readReg2 <= "00000";
+		wait for 10 ns;	
+		
+		dataIn   <= X"66666666"; --writing while still being read
+		writeReg <= "01111";
+		writeCmd <= '1';
+		wait for 5 ns;	
+		writeCmd <= '0';
+		wait for 5 ns;	
+		
 		wait; -- will wait forever
 	END PROCESS;
 

@@ -85,7 +85,33 @@ architecture holistic of Processor is
 			co: out std_logic);
 	end component adder_subtracter;
 
+	component ImmGen
+    Port(ImmCon: in std_logic_vector(1 downto 0);
+	 Inst: in std_logic_vector(31 downto 0);
+	 ImmOut: out std_logic_vector(31 downto 0));
+	end component ImmGen;
+
+
+	signal MemRead,MemWrite,RegWrite,MemtoReg,BranchLogic,zero, ALUSrc: std_logic;
+	signal PCin,Inst,pc4,pc,ImmOut,WriteData, ReadData1, ReadData2, branchPC, AluIn2,ALUResult,memData,addOffset: std_logic_vector(31 downto 0);
+	signal ImmCon, BranchCon: std_logic_vector(1 downto 0);
+	signal ALUcon: std_logic_vector(4 downto 0);
 begin
 	-- Add your code here
+	pcComp: ProgramCounter port map(Clock=>clock, Reset=>reset, PCin=>PCin, PCout=>pc);
+	iRam: InstructionRAM port map(Reset=>reset, Clock=>clock, Address=>pc(31 downto 2), DataOut=>Inst);
+	Reg: Registers port map(readReg1=>Inst(19 downto 15), readReg2=>Inst(24 downto 20), writeReg=> Inst(11 downto 7), WriteData=>WriteData, writeCmd=> RegWrite, ReadData1=>ReadData1,ReadData2=>ReadData2);
+	ImmGenerator: ImmGen port map(ImmCon=>ImmCon, Inst=>Inst, ImmOut=>ImmOut);
+	pcAdd: adder_subtracter port map(datain_a=>pc, datain_b=>X"00000004",add_sub=>'0',dataout=>pc4);
+	branchAdd: adder_subtracter port map(datain_a=>pc, datain_b=>ImmOut,add_sub=>'0',dataout=>branchPC);
+	branchMux: BusMux2to1 port map(selector=>BranchLogic,In0=>pc4,In1=>branchPC, Result=>PCin);
+	BranchLogic<= '1' when ((BranchCon="01" and zero='1') or (BranchCon="10" and zero='0')) else '0';
+	ImmMux: BusMux2to1 port map(selector=>ALUSrc, In0=>ReadData2,In1=>ImmOut, Result=>AluIn2);
+	ALUcomp: ALU port map(DataIn1=>ReadData1,DataIn2=>AluIn2, ALUCtrl=>ALUcon, ALUResult=>ALUResult, Zero=>zero);
+	AddressOffset: adder_subtracter port map(datain_b=>X"10000000", datain_a=>ALUResult, add_sub=>'1', dataout=>addOffset);
+	dataMem: RAM port map(Reset=>reset, Clock=>clock, OE=>MemRead, WE=>MemWrite, Address=> addOffset(31 downto 2), DataIn=>ReadData2, DataOut=>memData);
+	MemMux: BusMux2to1 port map(selector=>MemtoReg, In0=>ALUResult,In1=>memData, Result=>WriteData);
+	Ctrl: Control port map(clk=> clock, opcode=>Inst(6 downto 0), funct3=>Inst(14 downto 12), funct7=>Inst(31 downto 25), Branch=>BranchCon, MemRead=>MemRead,MemWrite=>MemWrite,MemtoReg=>MemtoReg, ALUCtrl=>ALUCon, ALUSrc=>ALUSrc, ImmGen=>ImmCon, RegWrite=>RegWrite);
+
 end holistic;
 
